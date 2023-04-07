@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_authorization_office">
+        <item>Диспетчер</item>
+        <item>Технический специалист</item>
+    </string-array>
+</resources>

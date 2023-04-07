@@ -9,5 +9,38 @@
         android:id="@+id/authorizationFragment"
         android:name="com.example.quarrysystem.AuthorizationFragment"
         android:label="fragment_authorization"
-        tools:layout="@layout/fragment_authorization" />
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_loginCareerFragment"
+            app:destination="@id/loginCareerFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_loginOfficeFragment"
+            app:destination="@id/loginOfficeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginCareerFragment"
+        android:name="com.example.quarrysystem.LoginCareerFragment"
+        android:label="fragment_login_career"
+        tools:layout="@layout/fragment_login_career" >
+        <action
+            android:id="@+id/action_loginCareerFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+        <action
+            android:id="@+id/action_loginCareerFragment_to_mainScreenCareerFragment"
+            app:destination="@id/mainScreenCareerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginOfficeFragment"
+        android:name="com.example.quarrysystem.LoginOfficeFragment"
+        android:label="fragment_login_office"
+        tools:layout="@layout/fragment_login_office" >
+        <action
+            android:id="@+id/action_loginOfficeFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenCareerFragment"
+        android:name="com.example.quarrysystem.MainScreenCareerFragment"
+        android:label="fragment_main_screen_career"
+        tools:layout="@layout/fragment_main_screen_career" />
 </navigation>

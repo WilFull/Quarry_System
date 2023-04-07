@@ -6,20 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.quarrysystem.databinding.FragmentAuthorizationBinding
 import com.example.quarrysystem.databinding.FragmentLoginCareerBinding
-import kotlin.io.path.fileVisitor
+import com.example.quarrysystem.databinding.FragmentLoginOfficeBinding
 
-class LoginCareerFragment : Fragment() {
+class LoginOfficeFragment : Fragment() {
 
-    private var _binding: FragmentLoginCareerBinding? = null
+    private var _binding: FragmentLoginOfficeBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentLoginCareerBinding.inflate(inflater, container, false)
+        _binding = FragmentLoginOfficeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -27,10 +26,8 @@ class LoginCareerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonBackToAuthorization.setOnClickListener {
-            findNavController().navigate(R.id.action_loginCareerFragment_to_authorizationFragment)
+            findNavController().navigate(R.id.action_loginOfficeFragment_to_authorizationFragment)
         }
-
-
 
     }
 
@@ -38,4 +35,5 @@ class LoginCareerFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
