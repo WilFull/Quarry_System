@@ -79,7 +79,17 @@
         android:id="@+id/mainScreenTechnicalFragment"
         android:name="com.example.quarrysystem.technical.MainScreenTechnicalFragment"
         android:label="fragment_main_screen_technical"
-        tools:layout="@layout/fragment_main_screen_technical" />
+        tools:layout="@layout/fragment_main_screen_technical" >
+        <action
+            android:id="@+id/action_mainScreenTechnicalFragment_to_equipmentFragment"
+            app:destination="@id/equipmentFragment" />
+        <action
+            android:id="@+id/action_mainScreenTechnicalFragment_to_loadingLocationFragment"
+            app:destination="@id/loadingLocationFragment" />
+        <action
+            android:id="@+id/action_mainScreenTechnicalFragment_to_unloadingLocationFragment"
+            app:destination="@id/unloadingLocationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tasksDispetcherFragment"
         android:name="com.example.quarrysystem.dispetcher.tasks.TasksDispetcherFragment"
@@ -118,5 +128,32 @@
         <action
             android:id="@+id/action_reportingDispetcherFragment_to_mainScreenDispetcherFragment"
             app:destination="@id/mainScreenDispetcherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/equipmentFragment"
+        android:name="com.example.quarrysystem.technical.equipments.EquipmentFragment"
+        android:label="fragment_equipment"
+        tools:layout="@layout/fragment_equipment" >
+        <action
+            android:id="@+id/action_equipmentFragment_to_mainScreenTechnicalFragment"
+            app:destination="@id/mainScreenTechnicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingLocationFragment"
+        android:name="com.example.quarrysystem.technical.loadingLocation.LoadingLocationFragment"
+        android:label="fragment_loading_location"
+        tools:layout="@layout/fragment_loading_location" >
+        <action
+            android:id="@+id/action_loadingLocationFragment_to_mainScreenTechnicalFragment"
+            app:destination="@id/mainScreenTechnicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unloadingLocationFragment"
+        android:name="com.example.quarrysystem.technical.unloadingLocation.UnloadingLocationFragment"
+        android:label="fragment_unloading_location"
+        tools:layout="@layout/fragment_unloading_location" >
+        <action
+            android:id="@+id/action_unloadingLocationFragment_to_mainScreenTechnicalFragment"
+            app:destination="@id/mainScreenTechnicalFragment" />
     </fragment>
 </navigation>

@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textSize="26sp"
         android:text="Расчётная производительность: "
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -62,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:textSize="26sp"
         android:text="ID оборудования: "
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -72,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Местоположение погрузки: "
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -81,7 +84,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Материал"
+        android:textSize="26sp"
+        android:text="Материал: "
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -90,7 +94,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Местоположение разгрузки"
+        android:textSize="26sp"
+        android:text="Местоположение разгрузки: "
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -99,6 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textSize="26sp"
         android:text="Итого погрузок: "
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -108,6 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textSize="26sp"
         android:text="Время последней погрузки: "
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -117,6 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textSize="26sp"
         android:text="Среднее время погрузки: "
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -126,7 +134,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Привязанные автосамосвалы"
+        android:textSize="26sp"
+        android:text="Привязанные автосамосвалы: "
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -135,6 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="04"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
@@ -144,6 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="131-364"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
@@ -153,6 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="W09"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
@@ -162,6 +174,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Бункер Ф14"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
@@ -171,6 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
@@ -180,6 +194,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12:46"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7" />
@@ -189,6 +204,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="03:12"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/textView8" />
@@ -198,6 +214,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="15.25"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="@+id/textView9" />
@@ -207,6 +224,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="022, 023"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@+id/textView10" />

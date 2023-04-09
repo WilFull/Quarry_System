@@ -11,8 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Сотрудник 23002"
+        android:text="Сотрудник 230202"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,10 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:text="Место разгрузки: "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Место разгрузки: Ф14"
+        app:layout_constraintStart_toStartOf="@+id/textViewLocation1"
         app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp"
         tools:textSize="20sp" />
 
@@ -33,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Место погрузки: "
+        android:text="Место погрузки: 131-342"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -44,9 +43,9 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="130dp"
-        android:layout_marginStart="130dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

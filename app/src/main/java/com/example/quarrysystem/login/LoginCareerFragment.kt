@@ -32,7 +32,7 @@ class LoginCareerFragment : Fragment() {
         binding.buttonToMainScreenCareer.setOnClickListener {
             val machinistOrDriver = binding.textInputLayout.editText?.text.toString()
 
-            if (machinistOrDriver == "Машишинст") {
+            if (machinistOrDriver == "Машинист") {
                 findNavController().navigate(R.id.action_loginCareerFragment_to_mainScreenCareerFragment)
             }
             else {

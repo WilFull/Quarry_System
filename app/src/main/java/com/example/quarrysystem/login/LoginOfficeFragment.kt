@@ -32,7 +32,14 @@ class LoginOfficeFragment : Fragment() {
         }
 
         binding.buttonToMainScreenDispatcher.setOnClickListener {
-            findNavController().navigate(R.id.action_loginOfficeFragment_to_mainScreenDispetcherFragment)
+            val dispetcherOrTechnical = binding.textInputLayout.editText?.text.toString()
+
+            if (dispetcherOrTechnical == "Диспетчер") {
+                findNavController().navigate(R.id.action_loginOfficeFragment_to_mainScreenDispetcherFragment)
+            }
+            else {
+                findNavController().navigate(R.id.action_loginOfficeFragment_to_mainScreenTechnicalFragment)
+            }
         }
 
     }

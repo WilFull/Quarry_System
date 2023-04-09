@@ -24,16 +24,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigation_drawer"/>-->
 
+
     <Button
         android:id="@+id/tasks"
         android:layout_width="720dp"
         android:layout_height="120dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="40dp"
         android:text="Наряды заданий"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <Button
         android:id="@+id/application"
@@ -67,5 +68,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/monitoring" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Диспетчер"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
