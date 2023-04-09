@@ -2,4 +2,9 @@
     <string name="app_name">Quarry System</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_navigation">Диспетчер</string>
+    <string name="tasks">Задания</string>
+    <string name="application">Заявка</string>
+    <string name="monitoringEuipment">Мониторинг</string>
+    <string name="reporting">Отчётность</string>
 </resources>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_gravity="center"
-    tools:context=".AuthorizationFragment">
+    tools:context=".login.AuthorizationFragment">
 
     <TextView
         android:id="@+id/authorization_textView"

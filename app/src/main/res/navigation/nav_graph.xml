@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/authorizationFragment"
-        android:name="com.example.quarrysystem.AuthorizationFragment"
+        android:name="com.example.quarrysystem.login.AuthorizationFragment"
         android:label="fragment_authorization"
         tools:layout="@layout/fragment_authorization" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginCareerFragment"
-        android:name="com.example.quarrysystem.LoginCareerFragment"
+        android:name="com.example.quarrysystem.login.LoginCareerFragment"
         android:label="fragment_login_career"
         tools:layout="@layout/fragment_login_career" >
         <action
@@ -28,19 +28,95 @@
         <action
             android:id="@+id/action_loginCareerFragment_to_mainScreenCareerFragment"
             app:destination="@id/mainScreenCareerFragment" />
+        <action
+            android:id="@+id/action_loginCareerFragment_to_mainScreenDriverFragment"
+            app:destination="@id/mainScreenDriverFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginOfficeFragment"
-        android:name="com.example.quarrysystem.LoginOfficeFragment"
+        android:name="com.example.quarrysystem.login.LoginOfficeFragment"
         android:label="fragment_login_office"
         tools:layout="@layout/fragment_login_office" >
         <action
             android:id="@+id/action_loginOfficeFragment_to_authorizationFragment"
             app:destination="@id/authorizationFragment" />
+        <action
+            android:id="@+id/action_loginOfficeFragment_to_mainScreenTechnicalFragment"
+            app:destination="@id/mainScreenTechnicalFragment" />
+        <action
+            android:id="@+id/action_loginOfficeFragment_to_mainScreenDispetcherFragment"
+            app:destination="@id/mainScreenDispetcherFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainScreenCareerFragment"
-        android:name="com.example.quarrysystem.MainScreenCareerFragment"
+        android:name="com.example.quarrysystem.machinist.MainScreenMachinistFragment"
         android:label="fragment_main_screen_career"
-        tools:layout="@layout/fragment_main_screen_career" />
+        tools:layout="@layout/fragment_main_screen_machinist" />
+    <fragment
+        android:id="@+id/mainScreenDriverFragment"
+        android:name="com.example.quarrysystem.driver.MainScreenDriverFragment"
+        android:label="fragment_main_screen_driver"
+        tools:layout="@layout/fragment_main_screen_driver" />
+    <fragment
+        android:id="@+id/mainScreenDispetcherFragment"
+        android:name="com.example.quarrysystem.dispetcher.mainScreen.MainScreenDispatcherFragment"
+        android:label="fragment_main_screen_dispetcher"
+        tools:layout="@layout/fragment_main_screen_dispetcher" >
+        <action
+            android:id="@+id/action_mainScreenDispetcherFragment_to_tasksDispetcherFragment"
+            app:destination="@id/tasksDispetcherFragment" />
+        <action
+            android:id="@+id/action_mainScreenDispetcherFragment_to_applicationDispetcherFragment"
+            app:destination="@id/applicationDispetcherFragment" />
+        <action
+            android:id="@+id/action_mainScreenDispetcherFragment_to_monitoringDispetcherFragment"
+            app:destination="@id/monitoringDispetcherFragment" />
+        <action
+            android:id="@+id/action_mainScreenDispetcherFragment_to_reportingDispetcherFragment"
+            app:destination="@id/reportingDispetcherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenTechnicalFragment"
+        android:name="com.example.quarrysystem.technical.MainScreenTechnicalFragment"
+        android:label="fragment_main_screen_technical"
+        tools:layout="@layout/fragment_main_screen_technical" />
+    <fragment
+        android:id="@+id/tasksDispetcherFragment"
+        android:name="com.example.quarrysystem.dispetcher.tasks.TasksDispetcherFragment"
+        android:label="fragment_tasks_dispetcher"
+        tools:layout="@layout/fragment_tasks_dispetcher" >
+        <action
+            android:id="@+id/action_tasksDispetcherFragment_to_mainScreenDispetcherFragment"
+            app:destination="@id/mainScreenDispetcherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applicationDispetcherFragment"
+        android:name="com.example.quarrysystem.dispetcher.application.ApplicationDispetcherFragment"
+        android:label="fragment_application_dispetcher"
+        tools:layout="@layout/fragment_application_dispetcher" >
+        <action
+            android:id="@+id/action_applicationDispetcherFragment_to_mainScreenDispetcherFragment"
+            app:destination="@id/mainScreenDispetcherFragment" />
+        <action
+            android:id="@+id/action_applicationDispetcherFragment_to_tasksDispetcherFragment"
+            app:destination="@id/tasksDispetcherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monitoringDispetcherFragment"
+        android:name="com.example.quarrysystem.dispetcher.monitoring.MonitoringDispetcherFragment"
+        android:label="fragment_monitoring_dispetcher"
+        tools:layout="@layout/fragment_monitoring_dispetcher" >
+        <action
+            android:id="@+id/action_monitoringDispetcherFragment_to_mainScreenDispetcherFragment"
+            app:destination="@id/mainScreenDispetcherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportingDispetcherFragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.ReportingDispetcherFragment"
+        android:label="fragment_reporting_dispetcher"
+        tools:layout="@layout/fragment_reporting_dispetcher" >
+        <action
+            android:id="@+id/action_reportingDispetcherFragment_to_mainScreenDispetcherFragment"
+            app:destination="@id/mainScreenDispetcherFragment" />
+    </fragment>
 </navigation>
