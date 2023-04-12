@@ -13,19 +13,8 @@
         android:layout_marginTop="16dp"
         android:text="Сотрудник 230202"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewLocation2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Место разгрузки: Ф14"
-        app:layout_constraintStart_toStartOf="@+id/textViewLocation1"
-        app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp"
-        tools:textSize="20sp" />
 
     <TextView
         android:id="@+id/textViewLocation1"
@@ -35,9 +24,43 @@
         android:text="Место погрузки: 131-342"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp" />
+
+    <TextView
+        android:id="@+id/textViewLocation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text="Место разгрузки: Ф14"
+        app:layout_constraintStart_toStartOf="@+id/textViewLocation1"
+        app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp"
+        tools:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewLocationInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation2"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocation2"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewLocationInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation1"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocation1"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/line"
@@ -94,26 +117,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewLocationInput1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation1"
-        app:layout_constraintStart_toEndOf="@+id/textViewLocation1"
-        app:layout_constraintTop_toTopOf="@+id/textViewLocation1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textViewLocationInput2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation2"
-        app:layout_constraintStart_toEndOf="@+id/textViewLocation2"
-        app:layout_constraintTop_toTopOf="@+id/textViewLocation2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
