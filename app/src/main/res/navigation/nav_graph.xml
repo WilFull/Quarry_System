@@ -69,11 +69,11 @@
             android:id="@+id/action_mainScreenDispetcherFragment_to_applicationDispetcherFragment"
             app:destination="@id/applicationDispetcherFragment" />
         <action
-            android:id="@+id/action_mainScreenDispetcherFragment_to_monitoringDispetcherFragment"
-            app:destination="@id/monitoringDispetcherFragment" />
+            android:id="@+id/action_mainScreenDispetcherFragment_to_choiceEquipmentMonitoringFragment"
+            app:destination="@id/choiceEquipmentMonitoringFragment" />
         <action
-            android:id="@+id/action_mainScreenDispetcherFragment_to_reportingDispetcherFragment"
-            app:destination="@id/reportingDispetcherFragment" />
+            android:id="@+id/action_mainScreenDispetcherFragment_to_choiceReportingFragment"
+            app:destination="@id/choiceReportingFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainScreenTechnicalFragment"
@@ -112,24 +112,6 @@
             app:destination="@id/tasksDispetcherFragment" />
     </fragment>
     <fragment
-        android:id="@+id/monitoringDispetcherFragment"
-        android:name="com.example.quarrysystem.dispetcher.monitoring.MonitoringDispetcherFragment"
-        android:label="fragment_monitoring_dispetcher"
-        tools:layout="@layout/fragment_monitoring_dispetcher" >
-        <action
-            android:id="@+id/action_monitoringDispetcherFragment_to_mainScreenDispetcherFragment"
-            app:destination="@id/mainScreenDispetcherFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/reportingDispetcherFragment"
-        android:name="com.example.quarrysystem.dispetcher.reporting.ReportingDispetcherFragment"
-        android:label="fragment_reporting_dispetcher"
-        tools:layout="@layout/fragment_reporting_dispetcher" >
-        <action
-            android:id="@+id/action_reportingDispetcherFragment_to_mainScreenDispetcherFragment"
-            app:destination="@id/mainScreenDispetcherFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/equipmentFragment"
         android:name="com.example.quarrysystem.technical.equipments.EquipmentFragment"
         android:label="fragment_equipment"
@@ -156,4 +138,73 @@
             android:id="@+id/action_unloadingLocationFragment_to_mainScreenTechnicalFragment"
             app:destination="@id/mainScreenTechnicalFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/monitoringEqupment1Fragment"
+        android:name="com.example.quarrysystem.dispetcher.monitoring.MonitoringEqupment1Fragment"
+        android:label="fragment_monitoring_equpment1"
+        tools:layout="@layout/fragment_monitoring_equpment1" />
+    <fragment
+        android:id="@+id/choiceEquipmentMonitoringFragment"
+        android:name="com.example.quarrysystem.dispetcher.monitoring.ChoiceEquipmentMonitoringFragment"
+        android:label="fragment_choice_equipment_monitoring"
+        tools:layout="@layout/fragment_choice_equipment_monitoring" >
+        <action
+            android:id="@+id/action_choiceEquipmentMonitoringFragment_to_monitoringEqupment1Fragment"
+            app:destination="@id/monitoringEqupment1Fragment" />
+        <action
+            android:id="@+id/action_choiceEquipmentMonitoringFragment_to_monitoringCar1Fragment"
+            app:destination="@id/monitoringCar1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monitoringCar1Fragment"
+        android:name="com.example.quarrysystem.dispetcher.monitoring.MonitoringCar1Fragment"
+        android:label="fragment_monitoring_car1"
+        tools:layout="@layout/fragment_monitoring_car1" />
+    <fragment
+        android:id="@+id/choiceReportingFragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.ChoiceReportingFragment"
+        android:label="fragment_choice_reporting"
+        tools:layout="@layout/fragment_choice_reporting" >
+        <action
+            android:id="@+id/action_choiceReportingFragment_to_choiceEquipmentReportingFragment"
+            app:destination="@id/choiceEquipmentReportingFragment" />
+        <action
+            android:id="@+id/action_choiceReportingFragment_to_reportingTableFragment"
+            app:destination="@id/reportingTableFragment" />
+        <action
+            android:id="@+id/action_choiceReportingFragment_to_reportTableSumFragment"
+            app:destination="@id/reportTableSumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceEquipmentReportingFragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.rep1.ChoiceEquipmentReportingFragment"
+        android:label="fragment_choice_equipment_reporting"
+        tools:layout="@layout/fragment_choice_equipment_reporting" >
+        <action
+            android:id="@+id/action_choiceEquipmentReportingFragment_to_reportingCar1Fragment"
+            app:destination="@id/reportingCar1Fragment" />
+        <action
+            android:id="@+id/action_choiceEquipmentReportingFragment_to_reportingEquipment1Fragment"
+            app:destination="@id/reportingEquipment1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportingCar1Fragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.rep1.ReportingCar1Fragment"
+        android:label="fragment_reporting_car1"
+        tools:layout="@layout/fragment_reporting_car1" />
+    <fragment
+        android:id="@+id/reportingEquipment1Fragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.rep1.ReportingEquipment1Fragment"
+        android:label="fragment_reporting_equipment1"
+        tools:layout="@layout/fragment_reporting_equipment1" />
+    <fragment
+        android:id="@+id/reportingTableFragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.rep2.ReportingTableFragment"
+        android:label="fragment_reporting_table"
+        tools:layout="@layout/fragment_reporting_table" />
+    <fragment
+        android:id="@+id/reportTableSumFragment"
+        android:name="com.example.quarrysystem.dispetcher.reporting.rep3.ReportTableSumFragment"
+        android:label="fragment_report_table_sum"
+        tools:layout="@layout/fragment_report_table_sum" />
 </navigation>

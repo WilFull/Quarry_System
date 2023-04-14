@@ -10,7 +10,7 @@
         android:id="@+id/btmToCareerEmp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="Сотрудник 230202"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
         android:id="@+id/textViewLocation1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="Место погрузки: 131-342"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,12 +31,12 @@
         android:id="@+id/textViewLocation2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
         android:text="Место разгрузки: Ф14"
         app:layout_constraintStart_toStartOf="@+id/textViewLocation1"
-        app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp"
-        tools:textSize="20sp" />
+        app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp" />
 
     <TextView
         android:id="@+id/textViewLocationInput2"

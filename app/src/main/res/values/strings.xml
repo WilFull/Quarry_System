@@ -7,4 +7,11 @@
     <string name="application">Заявка</string>
     <string name="monitoringEuipment">Мониторинг</string>
     <string name="reporting">Отчётность</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title">Мониторинг</string>
+    <string name="supporting_text">
+        Состояние оборудования в реальном времени\nID оборудования\nМетсоположение погрузки: 131-364
+    </string>
+    <string name="cancel">Вернуться</string>
 </resources>

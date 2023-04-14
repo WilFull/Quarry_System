@@ -43,11 +43,11 @@ class MainScreenDispatcherFragment : Fragment() {
         }
 
         binding.monitoring.setOnClickListener {
-            findNavController().navigate(R.id.action_mainScreenDispetcherFragment_to_monitoringDispetcherFragment)
+            findNavController().navigate(R.id.action_mainScreenDispetcherFragment_to_choiceEquipmentMonitoringFragment)
         }
 
         binding.reporting.setOnClickListener {
-            findNavController().navigate(R.id.action_mainScreenDispetcherFragment_to_reportingDispetcherFragment)
+            findNavController().navigate(R.id.action_mainScreenDispetcherFragment_to_choiceReportingFragment)
         }
 
 
