@@ -24,8 +24,33 @@
         android:text="Место погрузки: "
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp" />
+
+    <TextView
+        android:id="@+id/textViewLocationInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Фабрика №18"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation2"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocation2"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewLocationInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="129-190"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation1"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocation1"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textViewLocation2"
@@ -34,34 +59,10 @@
         android:layout_marginTop="56dp"
         android:text="Место разгрузки: "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btmToCareerEmp"
         tools:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textViewLocationInput1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text=""
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation1"
-        app:layout_constraintStart_toEndOf="@+id/textViewLocation1"
-        app:layout_constraintTop_toTopOf="@+id/textViewLocation1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textViewLocationInput2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text=""
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation2"
-        app:layout_constraintStart_toEndOf="@+id/textViewLocation2"
-        app:layout_constraintTop_toTopOf="@+id/textViewLocation2"
-        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/line"
@@ -86,6 +87,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <Button
+        android:id="@+id/buttonUnloading"
+        android:layout_width="720dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:text="Разгрузка завершена"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoading" />
 
     <Button
         android:id="@+id/buttonBreak"

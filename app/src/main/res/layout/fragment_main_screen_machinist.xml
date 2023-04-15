@@ -67,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="130dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,23 +79,12 @@
         android:id="@+id/buttonLoading"
         android:layout_width="720dp"
         android:layout_height="150dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="104dp"
         android:text="Погрузка завершена"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line" />
-
-    <Button
-        android:id="@+id/buttonUnloading"
-        android:layout_width="720dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:text="Разгрузка завершена"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLoading" />
 
     <Button
         android:id="@+id/buttonBreak"

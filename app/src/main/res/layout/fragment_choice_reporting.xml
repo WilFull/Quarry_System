@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Дневная отчётность по оборудованию"
-        android:textSize="48sp"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Сводная таблица погрузочного оборудования"
-        android:textSize="48sp"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reporting1" />
@@ -33,8 +33,8 @@
         android:layout_width="720dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Процент суточного объёма работ от общей суммы"
-        android:textSize="48sp"
+        android:text="Процент суточного объёма работ от общей суммы погрузок"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reporting2" />
