@@ -40,36 +40,16 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="650dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-        tools:ignore="MissingConstraints">
-
-        <AutoCompleteTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Сотрудник"
-            android:inputType="none"
-            app:simpleItems="@array/item_authorization_office" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
         android:id="@+id/buttonToMainScreenDispatcher"
         android:layout_width="418dp"
         android:layout_height="86dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="120dp"
         android:text="Войти"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
         android:id="@+id/buttonBackToAuthorization"

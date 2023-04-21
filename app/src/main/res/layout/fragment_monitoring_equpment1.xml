@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-black"
         android:text="Экскаватор №01"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +31,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="500dp"
+        android:layout_width="780dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="100dp"
@@ -93,6 +94,18 @@
             android:layout_height="wrap_content"
             android:text="Итого погрузок"
             android:textSize="32sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Максимальная производительность [погрузки]"
+            android:textSize="32sp"/>
 
         <View
             android:layout_width="match_parent"
@@ -212,6 +225,18 @@
             android:layout_height="wrap_content"
             android:text="12"
             android:textSize="32sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16.00"
+            android:textSize="32sp"/>
 
         <View
             android:layout_width="match_parent"

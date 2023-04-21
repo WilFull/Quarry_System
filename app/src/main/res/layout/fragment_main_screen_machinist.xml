@@ -78,7 +78,7 @@
     <Button
         android:id="@+id/buttonLoading"
         android:layout_width="720dp"
-        android:layout_height="150dp"
+        android:layout_height="230dp"
         android:layout_marginTop="104dp"
         android:text="Погрузка завершена"
         android:textSize="48sp"
